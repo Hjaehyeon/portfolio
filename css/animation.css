@@ -1,0 +1,28 @@
+@keyframes circleMove {
+  0% {
+    transform: none;
+    z-index: 1;
+  }
+
+  50% {
+    transform: translateX(80px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes circleMove2 {
+  0% {
+    transform: none;
+  }
+
+  50% {
+    transform: translateX(-80px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
