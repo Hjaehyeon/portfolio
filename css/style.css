@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: esa;
-  src: url(/fonts/esamanru\ Bold.ttf);
+  src: url(../fonts/esamanru\ Bold.ttf);
 }
 
 @font-face {
   font-family: esa_medium;
-  src: url(/fonts/esamanru\ Medium.ttf);
+  src: url(../fonts/esamanru\ Medium.ttf);
 }
 
 
@@ -188,7 +188,7 @@ h1 {
 }
 
 .slide .slide-tok {
-  background-image: url(/img/tok.png);
+  background-image: url(../img/tok.png);
   background-position: center;
   height: 300px;
   display: flex;
@@ -217,7 +217,7 @@ h1 {
 }
 
 .slide .slide-logo__db {
-  background-image: url(/img/logodesign.png);
+  background-image: url(../img/logodesign.png);
   background-position: center;
   height: 300px;
   display: flex;
@@ -234,7 +234,7 @@ h1 {
 }
 
 .slide .slide-logo__pbm {
-  background-image: url(/img/pbm_logo.png);
+  background-image: url(../img/pbm_logo.png);
   background-position: center;
   height: 300px;
   display: flex;

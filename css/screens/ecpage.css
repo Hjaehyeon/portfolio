@@ -138,7 +138,7 @@ a {
 /* main */
 .main {
   height: 1200px;
-  background-image: url(/img/상단배경.png);
+  background-image: url(../../img/상단배경.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -414,7 +414,7 @@ nav {
   left: 0;
   right: 0;
   margin: 0 auto;
-  background-image: url(/img/그래픽효과.jpg);
+  background-image: url(../../img/그래픽효과.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -444,8 +444,6 @@ nav {
   transition: 2s;
   perspective: 500px;
 }
-
-.gp .event-container .event-circle:first-child {}
 
 .gp .event-container .event-circle:nth-child(2) {
   transform: rotateY(-180deg);

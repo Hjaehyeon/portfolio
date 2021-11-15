@@ -19,8 +19,7 @@ searchElInput.addEventListener('blur', function () {
 
 
 // 스크롤 추적 애니메이션
-const aloevera = document.querySelectorAll('.aloevera-inner.scroll-spy');
-const slowblow = document.querySelectorAll('.slowblow-inner.scroll-spy');
+const aloevera = document.querySelectorAll('.aloevera .aloevera-inner.scroll-spy');
 
 aloevera.forEach(function (aloe) {
   new ScrollMagic
@@ -31,6 +30,8 @@ aloevera.forEach(function (aloe) {
     .setClassToggle(aloe, 'show')
     .addTo(new ScrollMagic.Controller());
 });
+
+const slowblow = document.querySelectorAll('.slowblow .slowblow-inner.scroll-spy');
 
 slowblow.forEach(function (sb) {
   new ScrollMagic
