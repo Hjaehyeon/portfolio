@@ -1,5 +1,5 @@
-@import "/css/reset.css";
-@import "/css/components/scroll.css";
+@import "../../css/reset.css";
+@import "../../css/components/scroll.css";
 
 @keyframes circleRotation {
   from {
