@@ -14,10 +14,6 @@
   /*스타일입력*/
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
 
 @import "reset.css";
 @import "animation.css";
