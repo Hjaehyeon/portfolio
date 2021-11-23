@@ -11,17 +11,6 @@
   src: url(../fonts/esamanru\ Medium.ttf);
 }
 
-#no-mobile {
-  background-color: ivory;
-  width: 1000vw;
-  height: 1000vh;
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  line-height: 26px;
-  text-align: start;
-}
-
 :root {
   --main-color1: #E05E5E;
   --main-color2: #fbff76;
@@ -373,7 +362,592 @@ body {
 
 
 
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .main {
+    height: 100vh;
+    background-color: var(--main-color2);
+    display: flex;
+    overflow: hidden;
+  }
+
+
+
+  .main .main-center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .main .main-center img {
+    height: 26%;
+    margin: 40px 0 30px;
+  }
+
+  .main .main-center h1 {
+    color: var(--main-color1);
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .main-center__circle {
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 80px;
+  }
+
+  .main-center__circle .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+
+  .main-center__circle .circle:first-child {
+    background-color: var(--main-color1);
+    animation: circleMove 3s ease-in-out infinite;
+  }
+
+  .main-center__circle .circle:last-child {
+    background-color: var(--main-color2);
+    animation: circleMove2 3s ease-in-out infinite;
+  }
+
+  .main .main-center .main-center__container {
+    background-color: var(--main-color1);
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .main .main-center .main-center__container h1 {
+    color: var(--main-color2);
+    font-family: esa_medium;
+    margin-top: 30px;
+    font-size: 24px;
+  }
+
+  .main .main-center .main-center__container h1:first-child {
+    margin-top: 120px;
+    font-size: 40px;
+  }
+
+  .main .main-center .main-center__container h1:nth-child(2) {
+    margin-top: 100px;
+  }
+
+  .main .main-left {
+    overflow: hidden;
+    width: 8%;
+  }
+
+  .main .main-left img {
+    width: 100%;
+  }
+
+  .main .main-right {
+    background-color: var(--main-color1);
+    overflow: hidden;
+    width: 8%;
+  }
+
+  .main .main-right img {
+    width: 100%;
+  }
+
+
+
+  /* 프로필 */
+  .profile {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 550px;
+    margin-top: 200px;
+    overflow: hidden;
+  }
+
+  .profile .content__name {
+    width: 25%;
+    position: absolute;
+  }
+
+  .profile .content__info {
+    width: 75%;
+    position: absolute;
+    right: -20px;
+  }
+
+  .profile .cut {
+    width: 100%;
+    height: 20px;
+    background-color: var(--main-color1);
+    position: absolute;
+    bottom: 0;
+  }
+
+  /* 슬라이드 */
+  .slide {
+    position: relative;
+    background-color: tomato;
+    margin-top: 250px;
+  }
+
+  .slide a .slide-tok {
+    background-image: url(../img/tok.png);
+    background-position: center;
+    background-size: 250%;
+    background-repeat: no-repeat;
+    height: 160px;
+    display: flex;
+    align-content: center;
+  }
+
+  .slide a .slide-tok img {
+    z-index: 1;
+    height: 60px;
+    margin: auto 0 auto 20px;
+  }
+
+  .slide a .slide-tok .color-box {
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    background-color: black;
+    opacity: .4;
+  }
+
+
+  .slide a .slide-logo__db {
+    background-image: url(../img/logodesign.png);
+    background-position: center;
+    background-size: 250%;
+    background-repeat: no-repeat;
+    height: 160px;
+    display: flex;
+    align-content: center;
+  }
+
+  .slide a .slide-logo__db img {
+    z-index: 1;
+    height: 60px;
+    margin: auto 0 auto 20px;
+  }
+
+  .slide a .slide-logo__db .color-box {
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    background-color: black;
+    opacity: .4;
+  }
+
+  .slide a .slide-logo__pbm {
+    background-image: url(../img/pbm_logo.png);
+    background-position: center;
+    background-size: 250%;
+    background-repeat: no-repeat;
+    height: 160px;
+    display: flex;
+    align-content: center;
+  }
+
+  .slide a .slide-logo__pbm img {
+    z-index: 1;
+    height: 60px;
+    margin: auto 0 auto 20px;
+  }
+
+  .slide a .slide-logo__pbm .color-box {
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    background-color: black;
+    opacity: .4;
+  }
+
+
+
+
+  /* 합성이미지 */
+
+  .pme {
+    margin: 200px auto 0;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pme h1 {
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    color: var(--main-color1);
+    text-shadow: 0 2px 0px var(--main-color2), 0 16px 16px rgba(0, 0, 0, .2);
+  }
+
+  .pme img {
+    width: 100%;
+  }
+
+
+  .pme .swiper-container {
+    margin-top: 40px;
+    position: absolute;
+    width: calc(300px * 3 + 30px);
+    margin-left: calc((300px * 3 + 30px) / -2);
+    left: 50%;
+    height: 200px;
+    border: 4px double var(--main-color1);
+    overflow: hidden;
+  }
+
+  .pme .swiper-container .swiper-slide {
+    height: 470px;
+    opacity: .6;
+    overflow: hidden;
+  }
+
+  .pme .swiper-container .swiper-slide-active {
+    opacity: 1;
+  }
+
+  .pme .swiper-pagination {
+    bottom: 0;
+  }
+
+  .pme .swiper-pagination .swiper-pagination-bullet {
+    background-color: black;
+    width: 16px;
+    height: 16px;
+    margin-right: 120px;
+  }
+
+  .pme .swiper-pagination .swiper-pagination-bullet:last-child {
+    margin-right: 0;
+  }
+
+  .pme .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--main-color2);
+    border: 2px solid var(--main-color1);
+  }
+
+  .pme .swiper-prev,
+  .pme .swiper-next {
+    display: none;
+  }
+}
+
+
+
+
+
 
 
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
-@media all and (max-width:767px) {}
+@media all and (max-width:767px) {
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .main {
+    height: 100vh;
+    background-color: var(--main-color2);
+    display: flex;
+    overflow: hidden;
+  }
+
+
+
+  .main .main-center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .main .main-center img {
+    height: 20%;
+    margin: 40px 0 30px;
+  }
+
+  .main .main-center h1 {
+    color: var(--main-color1);
+    text-align: center;
+  }
+
+  .main-center__circle {
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 60px;
+  }
+
+  .main-center__circle .circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+
+  .main-center__circle .circle:first-child {
+    background-color: var(--main-color1);
+    animation: circleMove 3s ease-in-out infinite;
+  }
+
+  .main-center__circle .circle:last-child {
+    background-color: var(--main-color2);
+    animation: circleMove2 3s ease-in-out infinite;
+  }
+
+  .main .main-center .main-center__container {
+    background-color: var(--main-color1);
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .main .main-center .main-center__container h1 {
+    color: var(--main-color2);
+    font-family: esa_medium;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .main .main-center .main-center__container h1:first-child {
+    margin-top: 80px;
+    font-size: 20px;
+  }
+
+  .main .main-center .main-center__container h1:nth-child(2) {
+    margin-top: 60px;
+  }
+
+  .main .main-left {
+    overflow: hidden;
+    width: 8%;
+  }
+
+  .main .main-left img {
+    width: 100%;
+  }
+
+  .main .main-right {
+    background-color: var(--main-color1);
+    overflow: hidden;
+    width: 8%;
+  }
+
+  .main .main-right img {
+    width: 100%;
+  }
+
+
+
+  /* 프로필 */
+  .profile {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    overflow: hidden;
+  }
+
+  .profile .content__name {
+    width: 25%;
+    position: absolute;
+  }
+
+  .profile .content__info {
+    width: 75%;
+    position: absolute;
+    right: -20px;
+  }
+
+  .profile .cut {
+    width: 100%;
+    height: 10px;
+    background-color: var(--main-color1);
+    position: absolute;
+    bottom: 0;
+  }
+
+  /* 슬라이드 */
+  .slide {
+    position: relative;
+    background-color: tomato;
+    margin-top: 50px;
+  }
+
+  .slide a .slide-tok {
+    background-image: url(../img/tok.png);
+    background-position: center;
+    background-size: 250%;
+    background-repeat: no-repeat;
+    height: 100px;
+    display: flex;
+    align-content: center;
+  }
+
+  .slide a .slide-tok img {
+    z-index: 1;
+    height: 60px;
+    margin: auto 0 auto 20px;
+  }
+
+  .slide a .slide-tok .color-box {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    opacity: .4;
+  }
+
+
+  .slide a .slide-logo__db {
+    background-image: url(../img/logodesign.png);
+    background-position: center;
+    background-size: 250%;
+    background-repeat: no-repeat;
+    height: 100px;
+    display: flex;
+    align-content: center;
+  }
+
+  .slide a .slide-logo__db img {
+    z-index: 1;
+    height: 60px;
+    margin: auto 0 auto 20px;
+  }
+
+  .slide a .slide-logo__db .color-box {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    opacity: .4;
+  }
+
+  .slide a .slide-logo__pbm {
+    background-image: url(../img/pbm_logo.png);
+    background-position: center;
+    background-size: 250%;
+    background-repeat: no-repeat;
+    height: 100px;
+    display: flex;
+    align-content: center;
+  }
+
+  .slide a .slide-logo__pbm img {
+    z-index: 1;
+    height: 60px;
+    margin: auto 0 auto 20px;
+  }
+
+  .slide a .slide-logo__pbm .color-box {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    opacity: .4;
+  }
+
+
+
+
+  /* 합성이미지 */
+
+  .pme {
+    margin: 100px auto 0;
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pme h1 {
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    color: var(--main-color1);
+    text-shadow: 0 2px 0px var(--main-color2), 0 16px 16px rgba(0, 0, 0, .2);
+  }
+
+  .pme img {
+    width: 100%;
+  }
+
+
+
+  .pme .swiper-container {
+    margin-top: 40px;
+    position: absolute;
+    width: calc(200px * 3 + 30px);
+    margin-left: calc((200px * 3 + 30px) / -2);
+    left: 50%;
+    height: 120px;
+    border: 4px double var(--main-color1);
+    overflow: hidden;
+  }
+
+  .pme .swiper-container .swiper-slide {
+    height: 470px;
+    opacity: .6;
+    overflow: hidden;
+  }
+
+  .pme .swiper-container .swiper-slide-active {
+    opacity: 1;
+  }
+
+  .pme .swiper-pagination {
+    top: 200px;
+  }
+
+  .pme .swiper-pagination .swiper-pagination-bullet {
+    background-color: black;
+    width: 16px;
+    height: 16px;
+    margin-right: 120px;
+  }
+
+  .pme .swiper-pagination .swiper-pagination-bullet:last-child {
+    margin-right: 0;
+  }
+
+  .pme .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--main-color2);
+    border: 2px solid var(--main-color1);
+  }
+
+  .pme .swiper-prev,
+  .pme .swiper-next {
+    display: none;
+  }
+
+}
